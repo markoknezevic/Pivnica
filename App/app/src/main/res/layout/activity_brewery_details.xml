@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BreweryDetailsActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+                android:id="@+id/image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@color/colorPrimaryDark"
+                android:scaleType="centerCrop"
+        />
+
+        <TextView
+                android:id="@+id/name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="#1d1d23"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="29dp"
+                android:text="BRLO BRWNHOUSE"/>
+
+        <TextView
+                android:id="@+id/description_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#1d1d23"
+                android:lineSpacingExtra="5sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="29dp"
+                android:text="Willkommen im BRLO BRWHOUSE: Brauerei, Restaurant, Bar und Biergarten direkt am Gleisdreieck und vor allem das Zuhause von BRLO, dem Berliner Craft Beer. Unsere Wurzeln verstecken sich bereits in unserem
+Namen: BRLO ist der alt-slawische Ursprung von Berlin."/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:background="#0c3a3a3a"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/info_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="27dp"
+                    android:text="Restaurant Info"/>
+
+            <TextView
+                    android:id="@+id/openingtime_detail"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="OpeningTimes"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_group_7"
+
+                />
+
+                <TextView
+                        android:id="@+id/monday"
+
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+                        android:textColor="#1d1d23"
+                        android:lineSpacingExtra="6sp"
+                        android:text="Monday"
+                />
+                <TextView android:id="@+id/mondayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="9:00 - 22:00"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_group_7"
+
+                />
+                <TextView android:id="@+id/tuesday"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Tuesday"
+                />
+                <TextView android:id="@+id/tuesdayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="9:00 - 22:00"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_group_7"
+
+                />
+                <TextView android:id="@+id/wednesday"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Wednesday"
+                />
+                <TextView android:id="@+id/wednesdayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="9:00 - 22:00"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_group_7"
+
+                />
+                <TextView android:id="@+id/thursday"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Thursday"
+                />
+                <TextView android:id="@+id/thursdayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="9:00 - 22:00"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_group_7"
+
+                />
+                <TextView android:id="@+id/friday"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Friday"
+                />
+                <TextView android:id="@+id/fridayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="9:00 - 00:00"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView android:id="@+id/img1"
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_group_7"
+
+                />
+                <TextView android:id="@+id/saturday"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Saturday"
+                />
+                <TextView android:id="@+id/saturdayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="9:00 - 00:00"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:orientation="horizontal">
+
+                <ImageView android:id="@+id/img2"
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_group_7_copy_6"
+                />
+                <TextView android:id="@+id/sunday"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Sunday"
+                />
+                <TextView android:id="@+id/sundayOpeningTime"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:fontFamily="sans-serif"
+                          android:textStyle="normal"
+                          android:textColor="#1d1d23"
+                          android:lineSpacingExtra="6sp"
+                          android:text="Closed"
+                />
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/services_detail"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Services"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                    android:id="@+id/getthere_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginRight="74dp"
+                    android:text="How to get there?"
+            />
+
+            <TextView
+                    android:id="@+id/street_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:lineSpacingExtra="6sp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginRight="147dp"
+                    android:text="Christinen straße 23
+                        13088, Berlin"
+            />
+            <TextView
+                    android:id="@+id/comment_detail"
+
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#53ca83"
+                    android:gravity="end"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginRight="28dp"
+                    android:text="Amazing"
+            />
+            <TextView
+                    android:id="@+id/reviews_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="76dp"
+                    android:text="Reviews"
+            />
+
+            <TextView
+                    android:id="@+id/rating_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#53ca83"
+                    android:lineSpacingExtra="6sp"
+                    android:layout_marginLeft="251dp"
+                    android:layout_marginRight="45dp"
+                    android:text="5.3/6"/>
+            <TextView
+                    android:id="@+id/numreview_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#999999"
+                    android:lineSpacingExtra="6sp"
+                    android:layout_marginLeft="253dp"
+                    android:layout_marginRight="28dp"
+                    android:text="176 Reviews"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/customer_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Andreas Teufel
+                20 February 2017"/>
+            <TextView
+                    android:id="@+id/rating_detail2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#53ca83"
+                    android:lineSpacingExtra="6sp"
+                    android:text="5.3/6"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/re_detail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#1d1d23"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi."/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#1d1d23"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Andreas Teufel
+                20 February 2017"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#53ca83"
+                    android:lineSpacingExtra="6sp"
+                    android:text="5.3/6"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#1d1d23"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi."/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
